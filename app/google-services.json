@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "163798274694",
+    "firebase_url": "https://indianmedhistory-98b2b.firebaseio.com",
+    "project_id": "indianmedhistory-98b2b",
+    "storage_bucket": "indianmedhistory-98b2b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:163798274694:android:bf5003efaa8367845a7707",
+        "android_client_info": {
+          "package_name": "com.example.indianmedhistory"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "163798274694-shmobiiqnc32q3d2sjv7t4td0hchps9b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.indianmedhistory",
+            "certificate_hash": "c766d0440b1bb18c7dc224407792591dd8b4a186"
+          }
+        },
+        {
+          "client_id": "163798274694-rl36ddgkbsehg4042ooo4gucb3a9n7dk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCggLDnl8PBQ8O0hxWg1Wuy8PtQGizjRck"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "163798274694-rl36ddgkbsehg4042ooo4gucb3a9n7dk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
