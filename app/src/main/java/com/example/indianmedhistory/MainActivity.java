@@ -18,6 +18,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
@@ -25,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MyTag";
 
     FirebaseAuth firebaseAuth;
-    Button getRecord, setRecord;
+    FloatingActionButton getRecord, setRecord;
     public static final int PERMISSION_CODE = 007;
     private boolean cameraPermissionGranted = false;
 
