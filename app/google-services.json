@@ -1,42 +1,63 @@
 {
   "project_info": {
-    "project_number": "163798274694",
-    "firebase_url": "https://indianmedhistory-98b2b.firebaseio.com",
-    "project_id": "indianmedhistory-98b2b",
-    "storage_bucket": "indianmedhistory-98b2b.appspot.com"
+    "project_number": "60296157995",
+    "firebase_url": "https://qrscanner-8dd7b.firebaseio.com",
+    "project_id": "qrscanner-8dd7b",
+    "storage_bucket": "qrscanner-8dd7b.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:163798274694:android:bf5003efaa8367845a7707",
+        "mobilesdk_app_id": "1:60296157995:android:3c13da031ed9f97034036e",
         "android_client_info": {
-          "package_name": "com.example.indianmedhistory"
+          "package_name": "com.example.flutter_app_qr_scanner"
         }
       },
       "oauth_client": [
         {
-          "client_id": "163798274694-shmobiiqnc32q3d2sjv7t4td0hchps9b.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.indianmedhistory",
-            "certificate_hash": "c766d0440b1bb18c7dc224407792591dd8b4a186"
-          }
-        },
-        {
-          "client_id": "163798274694-rl36ddgkbsehg4042ooo4gucb3a9n7dk.apps.googleusercontent.com",
+          "client_id": "60296157995-oav9e9pe5vs8d30jnfoojp0aqmaqlkel.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCggLDnl8PBQ8O0hxWg1Wuy8PtQGizjRck"
+          "current_key": "AIzaSyDBbi4bsZVOby5na_Rz6iiOsPxZIIXxZNs"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "163798274694-rl36ddgkbsehg4042ooo4gucb3a9n7dk.apps.googleusercontent.com",
+              "client_id": "60296157995-oav9e9pe5vs8d30jnfoojp0aqmaqlkel.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:60296157995:android:b4d68fa1955a7fdb34036e",
+        "android_client_info": {
+          "package_name": "com.example.indianmedhistory"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "60296157995-oav9e9pe5vs8d30jnfoojp0aqmaqlkel.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBbi4bsZVOby5na_Rz6iiOsPxZIIXxZNs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "60296157995-oav9e9pe5vs8d30jnfoojp0aqmaqlkel.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
