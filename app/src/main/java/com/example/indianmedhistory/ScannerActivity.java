@@ -9,10 +9,14 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.Toolbar;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.indianmedhistory.ScannerOptions.GetPatientActivity;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.google.zxing.Result;
 
 import me.dm7.barcodescanner.zxing.ZXingScannerView;
@@ -21,14 +25,14 @@ public class ScannerActivity extends AppCompatActivity implements ZXingScannerVi
     ZXingScannerView scannerView;
     int option;
     private static final String TAG = "MyTag";
-    DatabaseReference userRef;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         scannerView = new ZXingScannerView(this);
         setContentView(scannerView);
-        option = getIntent().getIntExtra("data", 1);
+        option=getIntent().getIntExtra("data",1);
+
+
 
     }
 
@@ -48,24 +52,14 @@ public class ScannerActivity extends AppCompatActivity implements ZXingScannerVi
     @Override
     public void handleResult(Result rawResult) {
         String result = rawResult.getText();
-        //Toast.makeText(this, result, Toast.LENGTH_SHORT).show();
-        //String adhaar_id=result.substring(result.indexOf("uid=")+5,result.indexOf("uid=")+17);
-        //Log.d(TAG,result.substring(result.indexOf("uid=")+5,result.indexOf("uid=")+17));
+        Intent intent=new Intent(ScannerActivity.this,MyService.class);
+        intent.putExtra("value",result);
+
+        startService(intent);
+        onBackPressed();
 
 
-        if(option==1){
-            Intent intent=new Intent(ScannerActivity.this, GetPatientActivity.class);
-            intent.putExtra("data",result);
 
-            startActivity(intent);
-
-        }
-        if(option==2){
-            Intent intent=new Intent(ScannerActivity.this,GetPatientActivity.class);
-            intent.putExtra("data",result);
-
-            startActivity(intent);
-        }
 
     }
 }
