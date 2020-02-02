@@ -100,6 +100,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void performLoginProcess() {
+        Log.d(TAG, "performLoginProcess: ");
         String email = emailTextView.getText().toString().trim();
         String password = passwordTextView.getText().toString().trim();
         if (email.equals("") || password.equals("")) {
@@ -113,18 +114,14 @@ public class LoginActivity extends AppCompatActivity {
                 if (task.isSuccessful()) {
                     Toast.makeText(LoginActivity.this, "Successfully Logged In", Toast.LENGTH_SHORT).show();
                 } else {
+                    Log.d(TAG, "onComplete: "+task.getException().getMessage());
                     Toast.makeText(LoginActivity.this, task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                 }
             }
         });
     }
 
-    private void goToMainPage() {
-        Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-        startActivity(intent);
-        finish();
-    }
+
 
 
     @Override
@@ -148,6 +145,12 @@ public class LoginActivity extends AppCompatActivity {
             Log.d(TAG, "signInResult:failed code=" + GoogleSignInStatusCodes.getStatusCodeString(e.getStatusCode()));
             Log.d(TAG, "signInResult:failed code=" + e.getStatusCode());
         }
+    }
+    private void goToMainPage() {
+        Intent intent=new Intent(LoginActivity.this,MainActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(intent);
+        finish();
     }
 
     private void firebaseAuthWithGoogle(GoogleSignInAccount account) {

@@ -85,9 +85,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.profile:
-                Log.d(TAG, "onOptionsItemSelected: ");
-                break;
+
             case R.id.logout:
                 firebaseAuth.signOut();
                 break;
